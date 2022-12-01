@@ -2,29 +2,45 @@
     text-decoration: none;
 }
 body {
-
+margin-left: 10%;
+margin-right: 10%;
 }
 
 .oneThirdWidth {
-    width: 33vw;
+    width: 33%;
+    background-color: red;
 }
 
 .TenViewHeight {
     height: 10vh;
+
+    width: 100vw; 
 }
 
-.widthEighty {
-    width: 80vw;
+.linkcontainer {
+    display: flex;
+    background-color: red;
+    flex-direction: row;
 }
+
+
+
 
 .FullWidth {
     width: 100vw;
+    height: 10vh;
 }
 
 .backgroundGray {
-    background-color: gray;
+
 }
 
 .flexDaddy {
     display: flex;
+}
+
+.fullnavigation{
+    background-color: #91D790;
+    width: 100vw; 
+
 }
