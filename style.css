@@ -1,0 +1,30 @@
+* {
+    text-decoration: none;
+}
+body {
+
+}
+
+.oneThirdWidth {
+    width: 33vw;
+}
+
+.TenViewHeight {
+    height: 10vh;
+}
+
+.widthEighty {
+    width: 80vw;
+}
+
+.FullWidth {
+    width: 100vw;
+}
+
+.backgroundGray {
+    background-color: gray;
+}
+
+.flexDaddy {
+    display: flex;
+}
