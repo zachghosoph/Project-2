@@ -44,3 +44,22 @@ margin-right: 10%;
     width: 100vw; 
 
 }
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.overview {
+    width: 50%;
+}
+
+.image {
+    width: 50%;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
