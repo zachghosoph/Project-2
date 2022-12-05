@@ -7,12 +7,16 @@ margin-left: 10%;
 margin-right: 10%;
 } */
 body {
+    margin: 0;
+    background-color: #CEE8B9;
+}
+
+main{
     margin: 0 7%;
 }
 
 .oneThirdWidth {
     width: 33%;
-    background-color: red;
 }
 
 .TenViewHeight {
@@ -21,10 +25,62 @@ body {
     width: 100%;
 }
 
+.HomeButtonArea{
+    display: flex;
+
+}
+
+.HomeButton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    width: fit-content+5px;
+    padding: 5px 10px;
+    margin: 5px;
+    border: black solid 1px;
+}
+
+.HomeButton img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.heroArea{
+    box-sizing: border-box;
+    background-image: url(img/200w.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 200px;
+}
+.heroText{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 5px 30px;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 50px;
+}
+
+h1{
+    display: flex;
+    width: fit-content;
+    margin: 0;
+    align-items: center;
+}
+
 .linkcontainer {
     display: flex;
-    background-color: red;
     flex-direction: row;
+}
+
+.linkcontainer a{
+    text-align: center;
+    background-color: #9F9F9F;
+    border-radius: 15px;
+    padding: 20px;
+    border: black solid 2px;
 }
 
 
@@ -83,4 +139,34 @@ body {
 
 .reverse {
     flex-direction: row-reverse;
+}
+
+footer{
+    box-sizing: border-box;
+    width:100%;
+    padding: 5%;
+}
+
+footer>.flexDaddy{
+    width: 100%;
+}
+
+footer>.flexDaddy>div{
+    box-sizing: border-box;
+    width: calc(100%/3);
+    border-right: black solid 2px;
+    padding-left: 3%;
+    word-wrap:break-word;
+}
+
+footer>.flexDaddy>div:last-child{
+    box-sizing: border-box;
+    width: calc(100%/3);
+    border-right: black solid 0px;
+    padding-left: 3%;
+}
+
+footer ul{
+    list-style:none;
+    padding: 0;
 }
