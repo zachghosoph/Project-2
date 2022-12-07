@@ -207,3 +207,39 @@ footer ul{
     list-style:none;
     padding: 0;
 }
+
+.row {
+    display:flex;
+    flex-direction:row;
+    width:100vw;
+}
+
+.column {
+    display:flex;
+    flex-direction:column;
+    width:40vw;
+}
+
+.div_Daddy {
+    display:flex;
+
+}
+
+main h3,
+.div_Daddy p {
+    color:black;
+    background-color:white;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding:15px;
+}
+
+.div_Daddy p {
+width:100%;
+margin:0px;
+
+}
+
+.row img {
+    margin: 5px 15px;
+}
