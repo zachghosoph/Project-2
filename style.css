@@ -1,6 +1,9 @@
 * {
     text-decoration: none;
 }
+p{
+    font-size: 2em;
+}
 
 /* body {
 margin-left: 10%;
@@ -48,12 +51,29 @@ main{
 
 .heroArea{
     box-sizing: border-box;
-    background-image: url(img/200w.gif);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     width: 100%;
     padding: 200px;
+    height: 90vh;
 }
+
+.i1{
+    background-image: url(images/illiya-vjestica-W5FdAcHp7l8-unsplash.jpg);
+}
+.i2{
+    background-image: url(images/jo-anne-mcarthur-TlVNZvr_lf0-unsplash-1-450x300.png) 
+}
+.i3{
+    background-image: url(images/markus-spiske-wL7pwimB78Q-unsplash.jpg) 
+}
+.i4{
+    background-image: url(images/jo-anne-mcarthur-TlVNZvr_lf0-unsplash-1-450x300.png) 
+}
+
 .heroText{
     display: flex;
     background-color: rgba(0, 0, 0, 0.25);
@@ -61,6 +81,38 @@ main{
     border-radius: 10px;
     justify-content: center;
     font-size: 50px;
+}
+
+/*nav*/
+.oneThirdWidth{
+    font-size: 2em;
+}
+
+
+/*images*/
+.img-link{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-link>img{
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    border: 10px solid #D9D9D9;
+    border-radius: 50px;
+}
+
+.lnk>img:hover{
+    transition: 100ms;
+    opacity: .5;
+    background-color:  #D9D9D9;
+}
+
+.gr>img{
+    border: 10px solid #91D790;
 }
 
 h1{
@@ -74,19 +126,26 @@ h1{
 .linkcontainer {
     display: flex;
     flex-direction: row;
+    background-color: white;
 }
 
 .linkcontainer a{
     text-align: center;
     background-color: #9F9F9F;
-    border-radius: 15px;
     padding: 20px;
     border: black solid 2px;
     text-decoration: none;
     color: black;
 }
+.linkcontainer a:hover{
+    opacity: .5;
+    transition: 100ms;
+    background-color: #9F9F9F;
+}
 
-
+.margin>li{
+    margin-bottom: 1vh;
+}
 
 
 .FullWidth {
@@ -107,9 +166,11 @@ h1{
 }
 
 .content {
+    margin-top: 5vh;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 
 }
 
@@ -185,6 +246,7 @@ footer{
     box-sizing: border-box;
     width:100%;
     padding: 5%;
+    background-color: #91D790;
 }
 
 footer>.flexDaddy{
@@ -275,3 +337,15 @@ a{
 h1,
 h2,
 h3{font-family: 'Marcellus', serif; }
+
+@media screen and (max-width: 1200px){
+    .overview{
+        width: 100%;
+    }
+    .img-link{
+        width: 100%;
+    }
+    .img-link>img{
+        width: 80%;
+    }
+}
