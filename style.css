@@ -1,9 +1,21 @@
+
+/*styles*/
 * {
     text-decoration: none;
 }
 p{
     font-size: 2em;
 }
+
+p,
+a{
+    font-family: 'Inria Serif', serif;
+}
+
+h1,
+h2,
+h3{font-family: 'Marcellus', serif; }
+
 
 /* body {
 margin-left: 10%;
@@ -12,6 +24,8 @@ margin-right: 10%;
 body {
     margin: 0;
     background-color: #CEE8B9;
+    background-attachment: fixed;
+    background-image: url("images/brushed-alum-dark.png");
 }
 
 main{
@@ -30,18 +44,33 @@ main{
 
 .HomeButtonArea{
     display: flex;
-
+    justify-content: space-evenly;
 }
 
 .HomeButton{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: white;
     width: fit-content+5px;
     padding: 5px 10px;
     margin: 5px;
     border: black solid 1px;
+    height: 5vh;
+}
+
+.HomeButton>img{
+
+}
+
+.HomeButtonContainer{
+    width: 10vw;
+}
+
+.title{
+    width: 10vw;
+    text-align: center;
+    font-size: 1.6em;
 }
 
 .HomeButton img{
@@ -58,7 +87,7 @@ main{
     justify-content: space-around;
     width: 100%;
     padding: 200px;
-    height: 90vh;
+    height: 85vh;
 }
 
 .i1{
@@ -83,11 +112,14 @@ main{
     font-size: 50px;
 }
 
+.h1{
+    text-align: center;
+}
+
 /*nav*/
 .oneThirdWidth{
     font-size: 2em;
 }
-
 
 /*images*/
 .img-link{
@@ -99,7 +131,7 @@ main{
 
 .img-link>img{
     width: 80%;
-    height: 100%;
+    height: 40vh;
     object-fit: cover;
     border: 10px solid #D9D9D9;
     border-radius: 50px;
@@ -153,7 +185,9 @@ h1{
     height: 10vh;
 }
 
-.backgroundGray {}
+.spacer{
+    height: 15vh;
+}
 
 .flexDaddy {
     display: flex;
@@ -162,7 +196,14 @@ h1{
 .fullnavigation {
     background-color: #91D790;
     width: 100%;
+    position: fixed;
+    top: 0;
+}
 
+/*content*/
+.content:last-child,
+.end{
+    margin-bottom:5vh;
 }
 
 .content {
@@ -188,7 +229,7 @@ h1{
 
 .overview h3 {
     margin: 0.4rem 0;
-    font-size: 2rem;
+    font-size: 2.1rem;
     text-align: center;
 }
 
@@ -242,6 +283,16 @@ h1{
     font-family: 'Inria Serif', serif;
 }
 
+/*footer*/
+
+.res>ul>li{
+    font-size: 1.5em;
+}
+
+.res>h3{
+    font-size: 1.75em;
+}
+
 footer{
     box-sizing: border-box;
     width:100%;
@@ -271,6 +322,10 @@ footer>.flexDaddy>div:last-child{
 footer ul{
     list-style:none;
     padding: 0;
+}
+
+.cart-image{
+    height: 50px;
 }
 
 .row {
@@ -329,15 +384,6 @@ margin:0px;
     justify-content: space-around;
 } 
 
-p,
-a{
-    font-family: 'Inria Serif', serif;
-}
-
-h1,
-h2,
-h3{font-family: 'Marcellus', serif; }
-
 @media screen and (max-width: 1200px){
     .overview{
         width: 100%;
@@ -347,5 +393,8 @@ h3{font-family: 'Marcellus', serif; }
     }
     .img-link>img{
         width: 80%;
+    }
+    .cart-image{
+        background-image: url(images/);
     }
 }

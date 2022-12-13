@@ -18,12 +18,31 @@
     <header>
         <div class="fullnavigation">
             <div class="HomeButtonArea">
-                <a href="index.html">
+                <a class="HomeButtonContainer" href="index.html">
                     <div class="HomeButton">
-                        <img src="img/200w.gif" alt="Egg">
+                        <img class="egg" src="images/weblogo.png" alt="Egg">
                         Home
                     </div>
+                    <style>
+                        .egg{
+                            animation-name: egg;
+                            animation-duration: 2s;
+                            animation-delay: 2s;
+                            animation-iteration-count: infinite;
+                            position: relative;
+                        }
+                        @keyframes egg {
+                            0% {left: 0px;  top: 0px;}
+                            25% {left: 2px; top: 5px;}
+                            50% {left: -2px;  top: -10px;}
+                            75% {left: 2px; top: -5px; }
+                            100% {left: 0px;  top: 10px;}
+                        }
+                    </style>
                 </a>
+                <div class="HomeButton">
+                    <h2 class="title">Home</h2>
+                </div>
             </div>
 
             <div class="linkcontainer">
@@ -32,6 +51,7 @@
                 <a href="humane.html" class="oneThirdWidth backgroundGray">Buying Humane</a>
             </div>
         </div>
+        <div class="spacer"></div>
         <div class="heroArea i1">
             <div class="heroText">
                 <h1>Home</h1>
@@ -50,6 +70,7 @@
             </div>
             <div class="img-link gr"><img src="images/Caged_cows_at_Blackacres_Farm_-_geograph.org.uk_-_3252484.jpg" alt=""></div>
         </div>
+
         <div class="content reverse">
             <div class="overview">
                 <h3>Confinement of Livestock</h3>
@@ -58,7 +79,7 @@
                     will be given in the adjacent article.
                 </p>
             </div>
-                <a class="img-link lnk" href=""><img src="images/1200px-__Konrad_Łoziński_(48102526381).jpg" alt=""></a>
+                <a class="img-link lnk" href="factory.html"><img src="images/1200px-__Konrad_Łoziński_(48102526381).jpg" alt=""></a>
         </div>
 
         <div class="content">
@@ -69,7 +90,7 @@
                     awareness themselves, more is explained in the adjacent article.
                 </p>
             </div>
-            <a class="img-link lnk" href=""><img src="images/1200px-__Konrad_Łoziński_(48102526381).jpg" alt=""></a>
+            <a class="img-link lnk" href="help.html"><img src="images/charlie-solorzano-utTJUcvNXXo-unsplash.jpg" alt=""></a>
         </div>
 
         <div class="content reverse">
@@ -80,21 +101,21 @@
                     them.
                 </p>
             </div>
-            <a class="img-link lnk" href=""><img src="images/1200px-__Konrad_Łoziński_(48102526381).jpg" alt=""></a>
+            <a class="img-link lnk" href="humane.html"><img src="images/kyle-mackie-qgfjZUXup1M-unsplash (1).jpg" alt=""></a>
         </div>
     </main>
     <footer>
         <div class="flexDaddy">
-            <div>
+            <div class="res">
                 <h3>Home</h3>
-                <ul class="margin">
+                <ul>
                     <li>Factory Farming Effects</li>
                     <li>How To Help</li>
                 </ul>
             </div>
-            <div>
+            <div class="res">
                 <h3>Sources</h3>
-                <ul class="margin">
+                <ul>
                     <li>pubmed</li>
                     <li>ncbi</li>
                     <li>intechopen</li>
@@ -103,13 +124,15 @@
                     <li>Konrad Lozinski - link</li>
                 </ul>
             </div>
-            <div>
+            <div class="res">
                 <h3>Contact</h3>
-                <ul class="margin">
-                    <li>cart.org</li>
+                <ul>
+                    <li class="footflex">
+                        <a class="lnk" href="https://cart.org"><img class="cart-image" src="images/cart.png" alt="cart.org"></a>
+                        <a class="l2 lnk" href="mailto:zachariahghosoph@student.cart.org"><img class="cart-image" src="images/Gmail_Logo_256px.png" alt="gmail.com"></a>
+                    </li>
                     <li>2555 Clovis Ave.</li>
                     <li>Clovis, CA 93612</li>
-                    <li>zachariahghosoph@student.cart.org</li>
                     <li>(123)-456-7890</li>
                 </ul>
             </div>
