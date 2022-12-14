@@ -20,35 +20,23 @@
             <div class="HomeButtonArea">
                 <a class="HomeButtonContainer" href="index.html">
                     <div class="HomeButton">
-                        <img class="egg" src="images/weblogo.png" alt="Egg">
-                        Home
+                        <img src="images/weblogo.png" alt="Egg">
+                        <h2 class="logotitle">Home</h2>
                     </div>
-                    <style>
-                        .egg{
-                            animation-name: egg;
-                            animation-duration: 2s;
-                            animation-delay: 2s;
-                            animation-iteration-count: infinite;
-                            position: relative;
-                        }
-                        @keyframes egg {
-                            0% {left: 0px;  top: 0px;}
-                            25% {left: 2px; top: 5px;}
-                            50% {left: -2px;  top: -10px;}
-                            75% {left: 2px; top: -5px; }
-                            100% {left: 0px;  top: 10px;}
-                        }
-                    </style>
                 </a>
-                <div class="HomeButton">
+                <div class="HomeTitle">
                     <h2 class="title">Home</h2>
                 </div>
             </div>
-
-            <div class="linkcontainer">
-                <a href="factory.html" class="oneThirdWidth backgroundGray">Factory Farming Effects</a>
-                <a href="help.html" class="oneThirdWidth backgroundGray">How You Can Help</a>
-                <a href="humane.html" class="oneThirdWidth backgroundGray">Buying Humane</a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <img src="images/Hamburger_icon.svg" alt="Menu">
+                </button>
+                <div class="linkcontainer">
+                    <a href="factory.html" class="oneThirdWidth backgroundGray">Factory Farming Effects</a>
+                    <a href="help.html" class="oneThirdWidth backgroundGray">How You Can Help</a>
+                    <a href="humane.html" class="oneThirdWidth backgroundGray">Buying Humane</a>
+                </div>
             </div>
         </div>
         <div class="spacer"></div>
@@ -105,27 +93,31 @@
         </div>
     </main>
     <footer>
-        <div class="flexDaddy">
+        <div class="flex2">
             <div class="res">
-                <h3>Home</h3>
+                <h3 class="footertitle">Pages</h3>
                 <ul>
-                    <li>Factory Farming Effects</li>
-                    <li>How To Help</li>
+                    <li class="pg"><a class="footerlink" href="index.html" >Home</a></li>
+                    <li class="pg"><a class="footerlink" href="factory.html" >Factory Farming</a></li>
+                    <li class="pg"><a class="footerlink" href="help.html" >How You Can Help</a></li>
+                    <li class="pg"><a class="footerlink" href="humane.html" >Buying Humane</a></li>
                 </ul>
             </div>
             <div class="res">
-                <h3>Sources</h3>
+                <h3 class="footertitle">Sources</h3>
                 <ul>
-                    <li>pubmed</li>
-                    <li>ncbi</li>
-                    <li>intechopen</li>
-                    <li>unsplash</li>
-                    <li>Otwarte Klakti - link</li>
-                    <li>Konrad Lozinski - link</li>
+                    <li><a class="footerlink" href="https://commons.wikimedia.org/wiki/File:Caged_cows_at_Blackacres_Farm_-_geograph.org.uk_-_3252484.jpg">Caged cows at Blackacres Farm by Roger Templeman</a></li>
+                    <li ><a class="footerlink" href="https://commons.wikimedia.org/wiki/File:%22_Konrad_%C5%81ozi%C5%84ski_(48102526381).jpg">Konrad Łoziński</a></li>
+                    <li ><a class="footerlink" href="https://commons.wikimedia.org/wiki/File:Cows_on_a_farm_-_by_Eric_Dufresne.jpg">Cows on a farm - by Eric Dufresne</a></li>
+                    <li ><a class="footerlink" href="https://commons.wikimedia.org/wiki/File:Nugget_Truck.jpg ">Nugget Truck</a></li>
+                    <li ><a class="footerlink" href="https://www.usda.gov/topics/organic">USDA Logo</a></li>
+                    <li ><a class="footerlink" href="https://certifiedhumane.org/">Humane Logo</a></li>
+                    <li ><a href="https://www.sciencedirect.com/science/article/abs/pii/S030917409900039X#!" class="footerlink">sciencedirect</a></li>
+                    <li ><a href="https://www.intechopen.com/chapters/75636" class="footerlink">intechopen</a></li>
                 </ul>
             </div>
             <div class="res">
-                <h3>Contact</h3>
+                <h3 class="footertitle">Contact</h3>
                 <ul>
                     <li class="footflex">
                         <a class="lnk" href="https://cart.org"><img class="cart-image" src="images/cart.png" alt="cart.org"></a>
@@ -133,7 +125,7 @@
                     </li>
                     <li>2555 Clovis Ave.</li>
                     <li>Clovis, CA 93612</li>
-                    <li>(123)-456-7890</li>
+                    <li>(559)-625-5256</li>
                 </ul>
             </div>
         </div>
